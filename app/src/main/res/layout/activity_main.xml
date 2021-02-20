@@ -6,14 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/orderFeeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subTotlaTextView" />
+
     <Button
         android:id="@+id/cincoDescButton"
         android:layout_width="63dp"
         android:layout_height="62dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#9A9191"
-        android:text="5%"
+        android:backgroundTint="#4B9A9191"
+        android:text="10%"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,10 +34,10 @@
         android:id="@+id/quinceDescButton"
         android:layout_width="63dp"
         android:layout_height="62dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#9A9191"
-        android:text="15%"
+        android:backgroundTint="#4B9A9191"
+        android:text="20%"
         android:textSize="14sp"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/diezDescButton"
@@ -36,23 +47,38 @@
         android:id="@+id/veinteDescButton"
         android:layout_width="63dp"
         android:layout_height="62dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#9A9191"
-        android:text="20%"
+        android:backgroundTint="#4B9A9191"
+        android:text="25%"
         android:textSize="14sp"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/quinceDescButton"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
 
     <Button
+        android:id="@+id/ceroDescButton"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4B9A9191"
+        android:text="0%"
+        android:textSize="14sp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veinteDescButton"
+        app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
+
+    <Button
         android:id="@+id/diezDescButton"
         android:layout_width="63dp"
         android:layout_height="62dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#9A9191"
-        android:text="10%"
+        android:backgroundTint="#4B9A9191"
+        android:text="15%"
         android:textSize="14sp"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/cincoDescButton"
@@ -60,62 +86,105 @@
 
     <TextView
         android:id="@+id/PropinaTextView"
-        android:layout_width="352dp"
-        android:layout_height="34dp"
+        android:layout_width="360dp"
+        android:layout_height="38dp"
         android:text="Propina"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.245" />
 
     <EditText
         android:id="@+id/subtotalEditTextNumberDecimal"
-        android:layout_width="338dp"
-        android:layout_height="44dp"
+        android:layout_width="355dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:hint="Subtotal"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="42dp" />
 
     <TextView
         android:id="@+id/subTotlaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ceroDescButton" />
 
     <TextView
-        android:id="@+id/valorPropinaTextView"
+        android:id="@+id/serviceFeeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/subTotlaTextView"
-        tools:layout_editor_absoluteX="287dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderFeeTextView" />
+
+    <TextView
+        android:id="@+id/valorPropinaTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceFeeTextView" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="88dp"
-        android:layout_marginEnd="208dp"
         android:text="Subtotal"
-        app:layout_constraintEnd_toStartOf="@+id/subTotlaTextView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cincoDescButton" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Small Order Fee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="212dp"
-        android:text="Propina"
-        app:layout_constraintEnd_toStartOf="@+id/valorPropinaTextView"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Service Fee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Delivery Fee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="617dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

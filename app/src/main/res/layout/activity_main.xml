@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subTotlaTextView" />
@@ -20,12 +21,14 @@
         android:id="@+id/cincoDescButton"
         android:layout_width="63dp"
         android:layout_height="62dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#4B9A9191"
+        android:fontFamily="casual"
         android:text="10%"
         android:textColor="#000000"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
@@ -37,8 +40,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#4B9A9191"
+        android:fontFamily="casual"
         android:text="20%"
+        android:textColor="#000000"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/diezDescButton"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
@@ -50,8 +56,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#4B9A9191"
+        android:fontFamily="casual"
         android:text="25%"
+        android:textColor="#000000"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/quinceDescButton"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
@@ -62,12 +71,13 @@
         android:layout_height="62dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
         android:backgroundTint="#4B9A9191"
+        android:fontFamily="casual"
         android:text="0%"
+        android:textColor="#000000"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:iconTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/veinteDescButton"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
 
@@ -78,8 +88,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#4B9A9191"
+        android:fontFamily="casual"
         android:text="15%"
+        android:textColor="#000000"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/cincoDescButton"
         app:layout_constraintTop_toBottomOf="@+id/PropinaTextView" />
@@ -88,24 +101,26 @@
         android:id="@+id/PropinaTextView"
         android:layout_width="360dp"
         android:layout_height="38dp"
+        android:fontFamily="sans-serif-black"
         android:text="Propina"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <EditText
         android:id="@+id/subtotalEditTextNumberDecimal"
         android:layout_width="355dp"
         android:layout_height="42dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Subtotal"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -115,6 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ceroDescButton" />
@@ -125,6 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/orderFeeTextView" />
@@ -135,6 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="48dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/placeOrderButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,6 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="88dp"
+        android:fontFamily="sans-serif-black"
         android:text="Subtotal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cincoDescButton" />
@@ -157,6 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="Small Order Fee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -167,6 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="Service Fee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -177,6 +198,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="Delivery Fee"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/valorPropinaTextView3"

@@ -81,6 +81,5 @@ class MainActivity : AppCompatActivity() {
             placeOrderButton.text = total.toString()
         }
 
-
     }
 }

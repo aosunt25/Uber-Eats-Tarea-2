@@ -98,10 +98,17 @@ class MainActivity : AppCompatActivity() {
         listaCompra.add(orden)
         subtotalEditTextNumberDecimal.text.clear()
         subTotlaTextView.text = "0"
-        placeOrderButton.text = "0"
+        placeOrderButton.text = "0"l
         orderFeeTextView.text = "0"
         serviceFeeTextView.text = "0"
         valorPropinaTextView3.text = "0"
+         subtotal = 0.0f
+         orderFee = 0.0f
+         serviceFee = 0.0f
+         deliverFee = 0.0f
+         propina = 1.0f
+         total = 0.0f
+
         Log.i("com.example.uber_eats_tarea.lista", listaCompra.toString())
     }
 }

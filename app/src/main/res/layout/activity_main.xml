@@ -214,6 +214,7 @@
         android:layout_marginBottom="88dp"
         android:background="#1AFF00"
         android:backgroundTint="#03FF10"
+        android:onClick="guardarOrden"
         android:text="Button"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#00FF05"

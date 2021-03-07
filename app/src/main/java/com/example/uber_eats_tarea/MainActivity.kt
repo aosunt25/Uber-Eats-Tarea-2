@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         listaCompra.add(orden)
         subtotalEditTextNumberDecimal.text.clear()
         subTotlaTextView.text = "0"
-        placeOrderButton.text = "0"l
+        placeOrderButton.text = "0"
         orderFeeTextView.text = "0"
         serviceFeeTextView.text = "0"
         valorPropinaTextView3.text = "0"

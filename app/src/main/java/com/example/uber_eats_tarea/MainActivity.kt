@@ -1,7 +1,9 @@
 package com.example.uber_eats_tarea
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -108,6 +110,9 @@ class MainActivity : AppCompatActivity() {
          deliverFee = 0.0f
          propina = 1.0f
          total = 0.0f
+
+        val intento = Intent(this, ComprasActivity::class.java)
+        startActivity(intento)
 
         Log.i("com.example.uber_eats_tarea.lista", listaCompra.toString())
     }
